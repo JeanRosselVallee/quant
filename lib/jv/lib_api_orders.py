@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python   # for jupyter Notebook
 # coding: utf-8
 
 # - Developed by J. Vallee in 2025
@@ -92,6 +92,9 @@ def get_chrono( chrono_start, cpu_start ) : # in nano-seconds
 
 def plot_variation_prices( data, nb_last_records=10, hide_closed_hours=True ) :
     target_data = data[ -nb_last_records-1 : ]
+    if len( target_data ) == 0 :
+        print( f'No data to plot' )
+        return
     #display( target_data )
     if hide_closed_hours :
         tickers     = target_data.columns

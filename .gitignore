@@ -1,2 +1,7 @@
-cfg/
+cfg/credentials.cfg
 log/
+data/alpaca/*_accelerated_*.csv
+__pycache__/
+data/alpaca/chrono_ms_accelerated_20251016.csv
+data/alpaca/hist_accelerated_20251015.csv
+data/alpaca/hist_accelerated_20251016.csv
